@@ -15,14 +15,14 @@ namespace DragonProject
 
     public partial class Form1 : Form
     {
-        // variables
-        int currentPlayer;
+        // string, intergar and boolean variables
         string player1Name;
         string player2Name;
         string player1DragName;
         string player2DragName;
         string player1DragonType;
         string player2DragonType;
+        int currentPlayer;
         int player1Hp;
         int player2Hp;
         int player1Ad;
@@ -34,13 +34,13 @@ namespace DragonProject
         bool player1Ready = false;
         bool player2Ready = false;
 
-        // arrays
+        // arrays for player 1 and 2
         string[] P1data = new string[3];
         string[] P2data = new string[3];
         int[] P1values = new int[4];
         int[] P2values = new int[4]; 
 
-        // roll a dice 
+        // method that allows each player to roll a dice
         public int randomRoll()
         {
             int[] diceValues = { 1, 2, 3, 4, 5, 6 };
@@ -119,6 +119,7 @@ namespace DragonProject
             player1Sad = dragonStats.FIRE_DRAG_BD;
             player1Bd = dragonStats.FIRE_DRAG_BD;
 
+            // only shows image of the fire dragon and hides the others
             pictureBox1.Show();
             pictureBox2.Hide();
             pictureBox3.Hide();
@@ -135,6 +136,7 @@ namespace DragonProject
             player1Sad = dragonStats.ICE_DRAG_SAD;
             player1Bd = dragonStats.ICE_DRAG_BD;
 
+            // only shows image of ice dragon and hides the others
             pictureBox2.Show();
             pictureBox1.Hide();
             pictureBox3.Hide();
@@ -150,6 +152,7 @@ namespace DragonProject
             player1Sad = dragonStats.WIND_DRAG_BD;
             player1Bd = dragonStats.WIND_DRAG_SAD;
 
+            // only shows image of the wind dragon and hides the others
             pictureBox3.Show();
             pictureBox1.Hide();
             pictureBox2.Hide();
@@ -165,6 +168,7 @@ namespace DragonProject
             player1Sad = dragonStats.EARTH_DRAG_BD;
             player1Bd = dragonStats.EARTH_DRAG_SAD;
 
+            // only shows the image of earth dragon and hides the others
             pictureBox4.Show();
             pictureBox1.Hide();
             pictureBox2.Hide();
@@ -180,6 +184,7 @@ namespace DragonProject
             player2Sad = dragonStats.FIRE_DRAG_BD;
             player2Bd = dragonStats.FIRE_DRAG_SAD;
 
+            // only shows image of fire dragon and hides the others
             pictureBox5.Show();
             pictureBox6.Hide();
             pictureBox7.Hide();
@@ -195,6 +200,7 @@ namespace DragonProject
             player2Sad = dragonStats.ICE_DRAG_BD;
             player2Bd = dragonStats.ICE_DRAG_SAD;
 
+            // only shows the image of ice dragon ans hides the others
             pictureBox6.Show();
             pictureBox5.Hide();
             pictureBox7.Hide();
@@ -210,6 +216,7 @@ namespace DragonProject
             player2Sad = dragonStats.WIND_DRAG_BD;
             player2Bd = dragonStats.WIND_DRAG_SAD;
 
+            // only shows image of wind dragon and hides the others
             pictureBox7.Show();
             pictureBox5.Hide();
             pictureBox6.Hide();
@@ -225,6 +232,7 @@ namespace DragonProject
             player2Sad = dragonStats.EARTH_DRAG_BD;
             player2Bd = dragonStats.EARTH_DRAG_SAD;
 
+            // only shows image of earth dragon and hides the others
             pictureBox8.Show();
             pictureBox5.Hide();
             pictureBox6.Hide();
@@ -254,7 +262,7 @@ namespace DragonProject
 
             player1Ready = true;
 
-            checkIfReady();
+            checkIfReady(); // method that checks if player 1 has pressed "Start"
         }
 
         private void textBox2_TextChanged(object sender, EventArgs e)
@@ -275,7 +283,7 @@ namespace DragonProject
 
             player2Ready = true;
 
-            checkIfReady();
+            checkIfReady(); // method that is used to check is player 2 has pressed "Start"
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)

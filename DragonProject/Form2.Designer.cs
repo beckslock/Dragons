@@ -34,30 +34,30 @@
             pictureBox1 = new PictureBox();
             groupBox5 = new GroupBox();
             richTextBox1 = new RichTextBox();
-            groupBox4 = new GroupBox();
-            label6 = new Label();
-            label5 = new Label();
-            groupBox3 = new GroupBox();
-            label3 = new Label();
-            label2 = new Label();
-            groupBox2 = new GroupBox();
-            label4 = new Label();
-            button6 = new Button();
-            button5 = new Button();
-            button4 = new Button();
-            groupBox1 = new GroupBox();
-            label1 = new Label();
-            button3 = new Button();
-            button2 = new Button();
-            button1 = new Button();
+            opponent2 = new GroupBox();
+            oppDragHp2 = new Label();
+            opponentDrag2 = new Label();
+            opponent1 = new GroupBox();
+            oppDragHp1 = new Label();
+            opponentDrag1 = new Label();
+            player2Info = new GroupBox();
+            player2HpDisplay = new Label();
+            blockP2 = new Button();
+            specialAttP2 = new Button();
+            attackP2 = new Button();
+            player1Info = new GroupBox();
+            player1HpDisplay = new Label();
+            blockP1 = new Button();
+            specialAttP1 = new Button();
+            attackP1 = new Button();
             ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             groupBox5.SuspendLayout();
-            groupBox4.SuspendLayout();
-            groupBox3.SuspendLayout();
-            groupBox2.SuspendLayout();
-            groupBox1.SuspendLayout();
+            opponent2.SuspendLayout();
+            opponent1.SuspendLayout();
+            player2Info.SuspendLayout();
+            player1Info.SuspendLayout();
             SuspendLayout();
             // 
             // pictureBox3
@@ -112,213 +112,213 @@
             richTextBox1.Text = "\n\n";
             richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
-            // groupBox4
+            // opponent2
             // 
-            groupBox4.BackColor = Color.CornflowerBlue;
-            groupBox4.Controls.Add(label6);
-            groupBox4.Controls.Add(label5);
-            groupBox4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox4.ForeColor = SystemColors.Control;
-            groupBox4.Location = new Point(672, 298);
-            groupBox4.Name = "groupBox4";
-            groupBox4.Size = new Size(200, 117);
-            groupBox4.TabIndex = 6;
-            groupBox4.TabStop = false;
-            groupBox4.Text = "Opponent: Connor";
+            opponent2.BackColor = Color.CornflowerBlue;
+            opponent2.Controls.Add(oppDragHp2);
+            opponent2.Controls.Add(opponentDrag2);
+            opponent2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            opponent2.ForeColor = SystemColors.Control;
+            opponent2.Location = new Point(672, 298);
+            opponent2.Name = "opponent2";
+            opponent2.Size = new Size(200, 117);
+            opponent2.TabIndex = 6;
+            opponent2.TabStop = false;
+            opponent2.Text = "Opponent: Connor";
             // 
-            // label6
+            // oppDragHp2
             // 
-            label6.AutoSize = true;
-            label6.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label6.Location = new Point(61, 70);
-            label6.Name = "label6";
-            label6.Size = new Size(61, 21);
-            label6.TabIndex = 1;
-            label6.Text = "HP : 20";
+            oppDragHp2.AutoSize = true;
+            oppDragHp2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            oppDragHp2.Location = new Point(61, 70);
+            oppDragHp2.Name = "oppDragHp2";
+            oppDragHp2.Size = new Size(61, 21);
+            oppDragHp2.TabIndex = 1;
+            oppDragHp2.Text = "HP : 20";
             // 
-            // label5
+            // opponentDrag2
             // 
-            label5.AutoSize = true;
-            label5.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
-            label5.Location = new Point(14, 39);
-            label5.Name = "label5";
-            label5.Size = new Size(160, 21);
-            label5.TabIndex = 0;
-            label5.Text = "Red, the Fire Dragon";
+            opponentDrag2.AutoSize = true;
+            opponentDrag2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold);
+            opponentDrag2.Location = new Point(14, 39);
+            opponentDrag2.Name = "opponentDrag2";
+            opponentDrag2.Size = new Size(160, 21);
+            opponentDrag2.TabIndex = 0;
+            opponentDrag2.Text = "Red, the Fire Dragon";
             // 
-            // groupBox3
+            // opponent1
             // 
-            groupBox3.BackColor = Color.Firebrick;
-            groupBox3.Controls.Add(label3);
-            groupBox3.Controls.Add(label2);
-            groupBox3.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            groupBox3.ForeColor = SystemColors.Control;
-            groupBox3.Location = new Point(31, 298);
-            groupBox3.Name = "groupBox3";
-            groupBox3.Size = new Size(200, 117);
-            groupBox3.TabIndex = 9;
-            groupBox3.TabStop = false;
-            groupBox3.Text = "Opponent: Henro";
-            groupBox3.Enter += groupBox3_Enter;
+            opponent1.BackColor = Color.Firebrick;
+            opponent1.Controls.Add(oppDragHp1);
+            opponent1.Controls.Add(opponentDrag1);
+            opponent1.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            opponent1.ForeColor = SystemColors.Control;
+            opponent1.Location = new Point(31, 298);
+            opponent1.Name = "opponent1";
+            opponent1.Size = new Size(200, 117);
+            opponent1.TabIndex = 9;
+            opponent1.TabStop = false;
+            opponent1.Text = "Opponent: Henro";
+            opponent1.Enter += groupBox3_Enter;
             // 
-            // label3
+            // oppDragHp1
             // 
-            label3.AutoSize = true;
-            label3.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label3.Location = new Point(60, 70);
-            label3.Name = "label3";
-            label3.Size = new Size(61, 21);
-            label3.TabIndex = 1;
-            label3.Text = "HP : 30";
+            oppDragHp1.AutoSize = true;
+            oppDragHp1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            oppDragHp1.Location = new Point(60, 70);
+            oppDragHp1.Name = "oppDragHp1";
+            oppDragHp1.Size = new Size(61, 21);
+            oppDragHp1.TabIndex = 1;
+            oppDragHp1.Text = "HP : 30";
             // 
-            // label2
+            // opponentDrag1
             // 
-            label2.AutoSize = true;
-            label2.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label2.Location = new Point(12, 39);
-            label2.Name = "label2";
-            label2.Size = new Size(153, 21);
-            label2.TabIndex = 0;
-            label2.Text = "Ava, the Ice Dragon";
+            opponentDrag1.AutoSize = true;
+            opponentDrag1.Font = new Font("Segoe UI Semibold", 12F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            opponentDrag1.Location = new Point(12, 39);
+            opponentDrag1.Name = "opponentDrag1";
+            opponentDrag1.Size = new Size(153, 21);
+            opponentDrag1.TabIndex = 0;
+            opponentDrag1.Text = "Ava, the Ice Dragon";
             // 
-            // groupBox2
+            // player2Info
             // 
-            groupBox2.BackColor = SystemColors.Control;
-            groupBox2.Controls.Add(label4);
-            groupBox2.Controls.Add(button6);
-            groupBox2.Controls.Add(button5);
-            groupBox2.Controls.Add(button4);
-            groupBox2.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
-            groupBox2.ForeColor = Color.CornflowerBlue;
-            groupBox2.Location = new Point(644, 35);
-            groupBox2.Name = "groupBox2";
-            groupBox2.Size = new Size(228, 239);
-            groupBox2.TabIndex = 7;
-            groupBox2.TabStop = false;
-            groupBox2.Text = "Ava, the Ice Dragon's Turn";
+            player2Info.BackColor = SystemColors.Control;
+            player2Info.Controls.Add(player2HpDisplay);
+            player2Info.Controls.Add(blockP2);
+            player2Info.Controls.Add(specialAttP2);
+            player2Info.Controls.Add(attackP2);
+            player2Info.Font = new Font("Segoe UI", 10F, FontStyle.Bold);
+            player2Info.ForeColor = Color.CornflowerBlue;
+            player2Info.Location = new Point(644, 35);
+            player2Info.Name = "player2Info";
+            player2Info.Size = new Size(228, 239);
+            player2Info.TabIndex = 7;
+            player2Info.TabStop = false;
+            player2Info.Text = "Ava, the Ice Dragon's Turn";
             // 
-            // label4
+            // player2HpDisplay
             // 
-            label4.AutoSize = true;
-            label4.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label4.ForeColor = Color.CornflowerBlue;
-            label4.Location = new Point(82, 36);
-            label4.Name = "label4";
-            label4.Size = new Size(80, 28);
-            label4.TabIndex = 4;
-            label4.Text = "HP : 30";
-            label4.Click += label4_Click;
+            player2HpDisplay.AutoSize = true;
+            player2HpDisplay.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            player2HpDisplay.ForeColor = Color.CornflowerBlue;
+            player2HpDisplay.Location = new Point(82, 36);
+            player2HpDisplay.Name = "player2HpDisplay";
+            player2HpDisplay.Size = new Size(80, 28);
+            player2HpDisplay.TabIndex = 4;
+            player2HpDisplay.Text = "HP : 30";
+            player2HpDisplay.Click += label4_Click;
             // 
-            // button6
+            // blockP2
             // 
-            button6.BackColor = SystemColors.Control;
-            button6.FlatStyle = FlatStyle.Popup;
-            button6.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
-            button6.ForeColor = Color.CornflowerBlue;
-            button6.Location = new Point(24, 189);
-            button6.Name = "button6";
-            button6.Size = new Size(186, 42);
-            button6.TabIndex = 3;
-            button6.Text = "Block";
-            button6.UseVisualStyleBackColor = false;
-            button6.Click += button6_Click_1;
+            blockP2.BackColor = SystemColors.Control;
+            blockP2.FlatStyle = FlatStyle.Popup;
+            blockP2.Font = new Font("Segoe UI", 9F, FontStyle.Bold);
+            blockP2.ForeColor = Color.CornflowerBlue;
+            blockP2.Location = new Point(24, 189);
+            blockP2.Name = "blockP2";
+            blockP2.Size = new Size(186, 42);
+            blockP2.TabIndex = 3;
+            blockP2.Text = "Block";
+            blockP2.UseVisualStyleBackColor = false;
+            blockP2.Click += button6_Click_1;
             // 
-            // button5
+            // specialAttP2
             // 
-            button5.BackColor = SystemColors.Control;
-            button5.FlatStyle = FlatStyle.Popup;
-            button5.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button5.ForeColor = Color.CornflowerBlue;
-            button5.Location = new Point(24, 135);
-            button5.Name = "button5";
-            button5.Size = new Size(186, 42);
-            button5.TabIndex = 3;
-            button5.Text = "Special Attack";
-            button5.UseVisualStyleBackColor = false;
-            button5.Click += button5_Click_1;
+            specialAttP2.BackColor = SystemColors.Control;
+            specialAttP2.FlatStyle = FlatStyle.Popup;
+            specialAttP2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            specialAttP2.ForeColor = Color.CornflowerBlue;
+            specialAttP2.Location = new Point(24, 135);
+            specialAttP2.Name = "specialAttP2";
+            specialAttP2.Size = new Size(186, 42);
+            specialAttP2.TabIndex = 3;
+            specialAttP2.Text = "Special Attack";
+            specialAttP2.UseVisualStyleBackColor = false;
+            specialAttP2.Click += button5_Click_1;
             // 
-            // button4
+            // attackP2
             // 
-            button4.BackColor = SystemColors.Control;
-            button4.FlatStyle = FlatStyle.Popup;
-            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button4.ForeColor = Color.CornflowerBlue;
-            button4.Location = new Point(24, 77);
-            button4.Name = "button4";
-            button4.Size = new Size(186, 42);
-            button4.TabIndex = 3;
-            button4.Text = "Attack";
-            button4.UseVisualStyleBackColor = false;
-            button4.Click += button4_Click_1;
+            attackP2.BackColor = SystemColors.Control;
+            attackP2.FlatStyle = FlatStyle.Popup;
+            attackP2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            attackP2.ForeColor = Color.CornflowerBlue;
+            attackP2.Location = new Point(24, 77);
+            attackP2.Name = "attackP2";
+            attackP2.Size = new Size(186, 42);
+            attackP2.TabIndex = 3;
+            attackP2.Text = "Attack";
+            attackP2.UseVisualStyleBackColor = false;
+           // attackP2.Click += button4_Click_1;
             // 
-            // groupBox1
+            // player1Info
             // 
-            groupBox1.Controls.Add(label1);
-            groupBox1.Controls.Add(button3);
-            groupBox1.Controls.Add(button2);
-            groupBox1.Controls.Add(button1);
-            groupBox1.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            groupBox1.ForeColor = Color.Firebrick;
-            groupBox1.Location = new Point(16, 35);
-            groupBox1.Name = "groupBox1";
-            groupBox1.Size = new Size(226, 239);
-            groupBox1.TabIndex = 8;
-            groupBox1.TabStop = false;
-            groupBox1.Text = "Red, the Fire Dragon's Turn";
+            player1Info.Controls.Add(player1HpDisplay);
+            player1Info.Controls.Add(blockP1);
+            player1Info.Controls.Add(specialAttP1);
+            player1Info.Controls.Add(attackP1);
+            player1Info.Font = new Font("Segoe UI", 9.75F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            player1Info.ForeColor = Color.Firebrick;
+            player1Info.Location = new Point(16, 35);
+            player1Info.Name = "player1Info";
+            player1Info.Size = new Size(226, 239);
+            player1Info.TabIndex = 8;
+            player1Info.TabStop = false;
+            player1Info.Text = "Red, the Fire Dragon's Turn";
             // 
-            // label1
+            // player1HpDisplay
             // 
-            label1.AutoSize = true;
-            label1.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            label1.ForeColor = Color.Firebrick;
-            label1.Location = new Point(65, 36);
-            label1.Name = "label1";
-            label1.Size = new Size(80, 28);
-            label1.TabIndex = 3;
-            label1.Text = "HP : 20";
-            label1.Click += label1_Click;
+            player1HpDisplay.AutoSize = true;
+            player1HpDisplay.Font = new Font("Segoe UI", 15F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            player1HpDisplay.ForeColor = Color.Firebrick;
+            player1HpDisplay.Location = new Point(65, 36);
+            player1HpDisplay.Name = "player1HpDisplay";
+            player1HpDisplay.Size = new Size(80, 28);
+            player1HpDisplay.TabIndex = 3;
+            player1HpDisplay.Text = "HP : 20";
+            player1HpDisplay.Click += label1_Click;
             // 
-            // button3
+            // blockP1
             // 
-            button3.BackColor = SystemColors.Control;
-            button3.FlatStyle = FlatStyle.Popup;
-            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button3.ForeColor = Color.Firebrick;
-            button3.Location = new Point(15, 188);
-            button3.Name = "button3";
-            button3.Size = new Size(186, 45);
-            button3.TabIndex = 2;
-            button3.Text = "Block";
-            button3.UseVisualStyleBackColor = false;
-            button3.Click += button3_Click_1;
+            blockP1.BackColor = SystemColors.Control;
+            blockP1.FlatStyle = FlatStyle.Popup;
+            blockP1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            blockP1.ForeColor = Color.Firebrick;
+            blockP1.Location = new Point(15, 188);
+            blockP1.Name = "blockP1";
+            blockP1.Size = new Size(186, 45);
+            blockP1.TabIndex = 2;
+            blockP1.Text = "Block";
+            blockP1.UseVisualStyleBackColor = false;
+            blockP1.Click += button3_Click_1;
             // 
-            // button2
+            // specialAttP1
             // 
-            button2.BackColor = SystemColors.Control;
-            button2.FlatStyle = FlatStyle.Popup;
-            button2.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button2.ForeColor = Color.Firebrick;
-            button2.Location = new Point(15, 135);
-            button2.Name = "button2";
-            button2.Size = new Size(186, 42);
-            button2.TabIndex = 1;
-            button2.Text = "Special Attack";
-            button2.UseVisualStyleBackColor = false;
-            button2.Click += button2_Click_1;
+            specialAttP1.BackColor = SystemColors.Control;
+            specialAttP1.FlatStyle = FlatStyle.Popup;
+            specialAttP1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            specialAttP1.ForeColor = Color.Firebrick;
+            specialAttP1.Location = new Point(15, 135);
+            specialAttP1.Name = "specialAttP1";
+            specialAttP1.Size = new Size(186, 42);
+            specialAttP1.TabIndex = 1;
+            specialAttP1.Text = "Special Attack";
+            specialAttP1.UseVisualStyleBackColor = false;
+            specialAttP1.Click += button2_Click_1;
             // 
-            // button1
+            // attackP1
             // 
-            button1.BackColor = SystemColors.Control;
-            button1.FlatStyle = FlatStyle.Popup;
-            button1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
-            button1.ForeColor = Color.Firebrick;
-            button1.Location = new Point(15, 77);
-            button1.Name = "button1";
-            button1.Size = new Size(186, 42);
-            button1.TabIndex = 0;
-            button1.Text = "Attack";
-            button1.UseVisualStyleBackColor = false;
-            button1.Click += button1_Click_1;
+            attackP1.BackColor = SystemColors.Control;
+            attackP1.FlatStyle = FlatStyle.Popup;
+            attackP1.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point, 0);
+            attackP1.ForeColor = Color.Firebrick;
+            attackP1.Location = new Point(15, 77);
+            attackP1.Name = "attackP1";
+            attackP1.Size = new Size(186, 42);
+            attackP1.TabIndex = 0;
+            attackP1.Text = "Attack";
+            attackP1.UseVisualStyleBackColor = false;
+            attackP1.Click += button1_Click_1;
             // 
             // Form2
             // 
@@ -328,10 +328,10 @@
             Controls.Add(pictureBox2);
             Controls.Add(pictureBox1);
             Controls.Add(groupBox5);
-            Controls.Add(groupBox4);
-            Controls.Add(groupBox3);
-            Controls.Add(groupBox2);
-            Controls.Add(groupBox1);
+            Controls.Add(opponent2);
+            Controls.Add(opponent1);
+            Controls.Add(player2Info);
+            Controls.Add(player1Info);
             Controls.Add(pictureBox3);
             Name = "Form2";
             Text = "The Battle";
@@ -340,14 +340,14 @@
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             groupBox5.ResumeLayout(false);
-            groupBox4.ResumeLayout(false);
-            groupBox4.PerformLayout();
-            groupBox3.ResumeLayout(false);
-            groupBox3.PerformLayout();
-            groupBox2.ResumeLayout(false);
-            groupBox2.PerformLayout();
-            groupBox1.ResumeLayout(false);
-            groupBox1.PerformLayout();
+            opponent2.ResumeLayout(false);
+            opponent2.PerformLayout();
+            opponent1.ResumeLayout(false);
+            opponent1.PerformLayout();
+            player2Info.ResumeLayout(false);
+            player2Info.PerformLayout();
+            player1Info.ResumeLayout(false);
+            player1Info.PerformLayout();
             ResumeLayout(false);
         }
 
@@ -358,21 +358,21 @@
         private PictureBox pictureBox1;
         private GroupBox groupBox5;
         private RichTextBox richTextBox1;
-        private GroupBox groupBox4;
-        private Label label6;
-        private Label label5;
-        private GroupBox groupBox3;
-        private Label label3;
-        private Label label2;
-        private GroupBox groupBox2;
-        private Label label4;
-        private Button button6;
-        private Button button5;
-        private Button button4;
-        private GroupBox groupBox1;
-        private Label label1;
-        private Button button3;
-        private Button button2;
-        private Button button1;
+        private GroupBox opponent2;
+        private Label oppDragHp2;
+        private Label opponentDrag2;
+        private GroupBox opponent1;
+        private Label oppDragHp1;
+        private Label opponentDrag1;
+        private GroupBox player2Info;
+        private Label player2HpDisplay;
+        private Button blockP2;
+        private Button specialAttP2;
+        private Button attackP2;
+        private GroupBox player1Info;
+        private Label player1HpDisplay;
+        private Button blockP1;
+        private Button specialAttP1;
+        private Button attackP1;
     }
 }
