@@ -100,6 +100,7 @@
             groupBox5.TabIndex = 10;
             groupBox5.TabStop = false;
             groupBox5.Text = "Battle Log";
+            groupBox5.Enter += groupBox5_Enter;
             // 
             // richTextBox1
             // 
@@ -108,7 +109,8 @@
             richTextBox1.Name = "richTextBox1";
             richTextBox1.Size = new Size(377, 111);
             richTextBox1.TabIndex = 0;
-            richTextBox1.Text = resources.GetString("richTextBox1.Text");
+            richTextBox1.Text = "\n\n";
+            richTextBox1.TextChanged += richTextBox1_TextChanged;
             // 
             // groupBox4
             // 
@@ -157,6 +159,7 @@
             groupBox3.TabIndex = 9;
             groupBox3.TabStop = false;
             groupBox3.Text = "Opponent: Henro";
+            groupBox3.Enter += groupBox3_Enter;
             // 
             // label3
             // 
@@ -204,6 +207,7 @@
             label4.Size = new Size(80, 28);
             label4.TabIndex = 4;
             label4.Text = "HP : 30";
+            label4.Click += label4_Click;
             // 
             // button6
             // 
@@ -272,6 +276,7 @@
             label1.Size = new Size(80, 28);
             label1.TabIndex = 3;
             label1.Text = "HP : 20";
+            label1.Click += label1_Click;
             // 
             // button3
             // 
@@ -330,6 +335,7 @@
             Controls.Add(pictureBox3);
             Name = "Form2";
             Text = "The Battle";
+            Load += Form2_Load;
             ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();

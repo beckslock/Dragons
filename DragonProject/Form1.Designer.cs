@@ -123,6 +123,7 @@
             button1.TabIndex = 5;
             button1.Text = "Save";
             button1.UseVisualStyleBackColor = false;
+            button1.Click += button1_Click;
             // 
             // textBox2
             // 
@@ -132,6 +133,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(161, 18);
             textBox2.TabIndex = 4;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox1
             // 
@@ -141,6 +143,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(161, 18);
             textBox1.TabIndex = 3;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label2
             // 
@@ -298,6 +301,7 @@
             button2.TabIndex = 7;
             button2.Text = "Save";
             button2.UseVisualStyleBackColor = false;
+            button2.Click += button2_Click;
             // 
             // textBox4
             // 
